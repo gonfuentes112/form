@@ -12,6 +12,7 @@ body {
     line-height: 1.5;
     display: flex;
     height: 100vh;
+    width: 100vw;
 }
 
 nav {
@@ -36,4 +37,36 @@ nav {
 
 img {
     height: 80%;
+}
+
+main {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+#top,
+#form,
+#bottom{
+    height: 33.3%;
+    width: 100%;
+    display: flex;
+    flex: 1;
+}
+
+#top {
+
+
+    flex-direction: column;
+    justify-content: end;
+    background-color: #EEE;
+
+    padding-bottom: 2rem;
+}
+
+#top p {
+    margin: 1.5rem;
+    width: clamp(45ch, 65ch, 75ch);
+    font-weight: bold;
+    font-size: 1.5rem;
 }
