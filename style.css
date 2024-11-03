@@ -1,3 +1,8 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(../fonts/Norse-Bold.otf);
+  }
+  
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,8 +15,25 @@ body {
 }
 
 nav {
-    width: 40%;
+    width: 30%;
     background-image: url("bgimg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+#logo {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 25%;
+    font-family: norse-bold, sans-serif;
+    font-size: 5rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+img {
+    height: 80%;
 }
