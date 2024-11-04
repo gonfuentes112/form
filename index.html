@@ -16,9 +16,38 @@
             </p>
             <p>You <em>know</em> you want to.</p>
         </div>
-        <div id="form"></div>
+        <div id="middle">
+            <p>Let's do this!</p>
+            <form action="/" method="post">
+                <p>
+                    <label for="first-name"> FIRST NAME <span class="asterisk-class">*</span></label>
+                    <input type="text" name="first-name" id="first-name" required>
+
+                    <label for="email"> EMAIL (user@somewhere.com) <span class="asterisk-class">*</span></label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="pwd"> PASSWORD (at least 6 characters) <span class="asterisk-class">*</span></label>
+                    <input type="password" name="pwd" id="pwd" minlength="6">
+
+                </p>
+                <p>
+                    <label for="last-name"> LAST NAME </label>
+                    <input type="text" name="last-name" id="last-name">
+
+                    <label for=""> PHONE NUMBER </label>
+                    <input type="text" name="" id="">
+                    
+                    <label for="pwdrepeat"> CONFIRM PASSWORD <span class="asterisk-class">*</span></label>
+                    <input type="password" name="pwdrepeat" id="pwdrepeat" minlength="6" required>
+                    
+                </p>
+
+        </div>
         <div id="bottom">
+            <p id="asterisk">Fields with a <span class="asterisk-class">*</span> are required</p>
             <button type="submit">Create Account</button>
+
+        </form>
             <p>Already have an account? <span>Log in</span>
             </p>
         </div>
